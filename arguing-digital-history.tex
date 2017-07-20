@@ -1,0 +1,191 @@
+\documentclass[11pt,]{article}
+\usepackage[left=1in,top=1in,right=1in,bottom=1in]{geometry}
+\newcommand*{\authorfont}{\fontfamily{phv}\selectfont}
+\usepackage[]{mathpazo}
+
+
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+
+
+
+\usepackage{abstract}
+\renewcommand{\abstractname}{}    % clear the title
+\renewcommand{\absnamepos}{empty} % originally center
+
+\renewenvironment{abstract}
+ {{%
+    \setlength{\leftmargin}{0mm}
+    \setlength{\rightmargin}{\leftmargin}%
+  }%
+  \relax}
+ {\endlist}
+
+\makeatletter
+\def\@maketitle{%
+  \newpage
+%  \null
+%  \vskip 2em%
+%  \begin{center}%
+  \let \footnote \thanks
+    {\fontsize{18}{20}\selectfont\raggedright  \setlength{\parindent}{0pt} \@title \par}%
+}
+%\fi
+\makeatother
+
+
+
+
+\setcounter{secnumdepth}{0}
+
+
+
+\title{Arguing with Digital History  }
+
+
+
+\author{\Large Jason A. Heppler, Ph.D.\vspace{0.05in} \newline\normalsize\emph{University of Nebraska at Omaha}  }
+
+
+\date{}
+
+\usepackage{titlesec}
+
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\normalsize\itshape}
+\titleformat*{\subsubsection}{\normalsize\itshape}
+\titleformat*{\paragraph}{\normalsize\itshape}
+\titleformat*{\subparagraph}{\normalsize\itshape}
+
+
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+
+
+
+\newtheorem{hypothesis}{Hypothesis}
+\usepackage{setspace}
+
+\makeatletter
+\@ifpackageloaded{hyperref}{}{%
+\ifxetex
+  \PassOptionsToPackage{hyphens}{url}\usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \PassOptionsToPackage{hyphens}{url}\usepackage[unicode=true]{hyperref}
+\fi
+}
+
+\@ifpackageloaded{color}{
+    \PassOptionsToPackage{usenames,dvipsnames}{color}
+}{%
+    \usepackage[usenames,dvipsnames]{color}
+}
+\makeatother
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={Jason A. Heppler, Ph.D. (University of Nebraska at Omaha)},
+             pdfkeywords = {digital history, digital humanities, historical narrative, historical
+theory, historical argumentation},  
+            pdftitle={Arguing with Digital History},
+            colorlinks=true,
+            citecolor=blue,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+
+
+
+% add tightlist ----------
+\providecommand{\tightlist}{%
+\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\begin{document}
+	
+% \pagenumbering{arabic}% resets `page` counter to 1 
+%
+% \maketitle
+
+{% \usefont{T1}{pnc}{m}{n}
+\setlength{\parindent}{0pt}
+\thispagestyle{plain}
+{\fontsize{18}{20}\selectfont\raggedright 
+\maketitle  % title \par  
+
+}
+
+{
+   \vskip 13.5pt\relax \normalsize\fontsize{11}{12} 
+\textbf{\authorfont Jason A. Heppler, Ph.D.} \hskip 15pt \emph{\small University of Nebraska at Omaha}   
+
+}
+
+}
+
+
+
+
+
+
+
+\begin{abstract}
+
+    \hbox{\vrule height .2pt width 39.14pc}
+
+    \vskip 8.5pt % \small 
+
+\noindent Prepared for the \emph{Arguing with Digital History} workshop at George
+Mason University, September 14-16, 2017.
+
+
+\vskip 8.5pt \noindent \emph{Keywords}: digital history, digital humanities, historical narrative, historical
+theory, historical argumentation \par
+
+    \hbox{\vrule height .2pt width 39.14pc}
+
+
+
+\end{abstract}
+
+
+\vskip 6.5pt
+
+\noindent  Historical argumentation in digital history has fallen short, with
+projects tending to fall in the realms of digital collections or data
+visualization. Some of these projects have led to more traditional
+venues of historical writing and publishing. The \emph{Valley of the
+Shadow}, an archive of Civil War-era material detailing the experiences
+of Confederate and Union soldiders in Augusta and Franklin Counties in
+Virginia, led to the publication of ``The Differences Slavery Made'' by
+Ed Ayers and William G. Thomas, as well as Ayers' \emph{In the Presence
+of Mine Enemies: war in the Heart of America, 1859--1863}. The
+appearance of digital history projects alongside print continues:
+Richard White's \emph{Railroaded} was accompanied by a digital
+component\footnote{Richard White, \emph{Railroaded: The
+  Transcontinentals and the Making of Modern America} (New York:
+  jNorton, 2012). White's digital companion, \emph{Railroaded}, is found
+  at \url{http://railroaded.stanford.edu}.}; William G. Thomas's
+\emph{The Iron Way} likewise had a digital component, providing access
+to primary sources, data, and visualizations\footnote{William G. Thomas,
+  \emph{The Iron Way: Railroads, the Civil War, and the Making of Modern
+  America} (New Haven: Yale University Press, 2011). Thomas's digital
+  companion, \emph{Railroads and the Making of Modern America}, is at
+  \url{http://railroads.unl.edu/}.}; Karl Jacoby's \emph{Shadows at
+Dawn} relies on a digital companion to provide access to primary
+sources.\footnote{Karl Jacoby, \emph{Shadows at Dawn: An Apache Massacre
+  and the Violence of History} (New York: Penguin Books, 2009). Jacoby's
+  digital companion, \emph{Shadows at Dawn}, is at
+  \url{http://brown.edu/Research/Aravaipa/}.} Conspicuously, the digital
+components don't primarily exist for driving a historical thesis, nor do
+they offer much in the way of expanding on narrative elements of their
+print partners (or experiments in nonlinear hypertextual narrative).
+
+Few digital history projects have attempted to exist as digital-only
+publications.
+
+
+\newpage
+\singlespacing 
+\end{document}
